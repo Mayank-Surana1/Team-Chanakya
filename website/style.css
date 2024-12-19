@@ -1,0 +1,172 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(25, 25, 25);
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#chat-log {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+#user-input {
+    padding: 10px;
+    width: 80%;
+}
+.container{
+    margin-top: 350px;
+}
+#send-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+} */
+
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(145deg, #a600ff, #ff00bf); */
+    background: linear-gradient(355deg, #000000, #5b00ec);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #eee;
+}
+
+.container {
+    width: 600px;
+    height: 250px;
+    text-align: center;
+    background: rgba(50, 50, 80, 0.8);
+    border-radius: 12px;
+    padding: 30px;
+    padding-top:100px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    margin: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    /* color: #dca9e0;
+    text-shadow: 10px 10px 10px #a0416154, 0 0 10px #e6024e; */
+    color: #ffffff;
+    text-shadow: 0px 0px 20px #ffffff , 0 0 25px #9531a9
+}
+
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #eee;
+}
+
+#mic-btn {
+    background: linear-gradient(145deg, #61045f, #aa076b);
+    box-shadow: 0 4px 15px rgba(170, 7, 107, 0.7);
+}
+
+#sos-btn {
+    background: linear-gradient(145deg, #0029ff, #6a1b9a);
+    box-shadow: 0 4px 15px rgba(26, 45, 255, 0.7);
+}
+
+#text-btn {
+    background: linear-gradient(145deg, #4a00e0, #8e2de2);
+    box-shadow: 0 4px 15px rgba(78, 13, 227, 0.7);
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+#chat-log {
+    border: 1px solid #555;
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background: #222;
+    color: #ddd;
+    border-radius: 8px;
+}
+
+#user-input {
+    padding: 12px;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    background: #333;
+    color: #eee;
+}
+
+#user-input::placeholder {
+    color: #aaa;
+}
+
+#send-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #2e2e7a, #52489c);
+    color: #eee;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#send-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+#send-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    #user-input {
+        width: 90%;
+    }
+}
